@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <!-- Your page title-->
+    <title>Muskan Enterprises</title>
+    <!-- Place Custom Favicon here-->
+    <link rel="shortcut icon" href="images/Ek_onkar.png" type="image/x-icon" />
+</head>
+
+<body>
+
+    <header class="e-header e-header-fixed e-d-flex e-justify-between e-align-center">
+
+        <div class="e-container">
+
+            <div class="e-offset-12 e-offset-md-3 e-offset-lg-2">
+
+                <nav class="e-header__nav e-d-flex e-justify-between e-align-center">
+
+                    <div class="e-header__left e-d-flex e-align-center e-mg-r-10 e-mg-r-0-md">
+
+                        <div class="e-header__mobile e-mg-r-10 e-d-none-md">
+                            <button type="button" class="e-icon-btn e-header__mobile--trigger" data-menu-target="main-menu">
+                  <i class="ri-menu-2-line e-fs-16"></i>
+                </button>
+                        </div>
+
+                        <div class="e-header__form">
+
+                            <form class="e-form">
+                                <div class="e-form__group">
+                                    <input type="text" class="e-form__input" placeholder="Search...">
+                                    <i class="ri-search-line e-form__icon"></i>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                    <!-- .e-header__left ends -->
+
+                    <ul class="e-header__navitems e-header__sidebar-md-3 e-header__sidebar-lg-2 e-pd-y-20" id="main-menu">
+
+                        <li class="e-header__list">
+                            <a href="index.html" class="e-header__link--logo e-pd-20 e-d-flex e-align-center e-justify-center">
+                                <img src="images/ease-logo.svg" alt="Ease Dashboard logo">
+                            </a>
+                        </li>
+
+                        <li class="e-header__list e-dropdown">
+                            <a href="" class="e-header__link e-active e-pd-20 e-d-flex e-align-center e-justify-between" data-dropdown-target="submenu">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i
+                      class="ri-dashboard-line e-mg-r-10"></i>Dashboard</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                            <ul class="e-dropdown__menu" id="submenu">
+                                <li><a href="index.html" class="e-header__sublink e-d-block e-pd-x-20 e-pd-y-10 e-active">Shop availability </a>
+                                </li>
+                                <li><a href="invoice.html" class="e-header__sublink e-d-block e-pd-x-20 e-pd-y-10">Invoice</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!------------------
+                        <li class="e-header__list e-header__list--title e-fw-bld e-tt-uppercase e-pd-x-20 e-pd-y-10">About Shop Stock
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="messages.html" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i
+                      class="ri-message-2-line e-mg-r-10"></i>Old Stock</span>
+                                <span class="e-bdg e-bdg-danger">12</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="inbox.html" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i class="ri-inbox-line e-mg-r-10"></i>Bar</span>
+                                <span class="e-bdg e-bdg-danger">6</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i
+                      class="ri-calendar-2-line e-mg-r-10"></i>Calendar</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i class="ri-task-line e-mg-r-10"></i>Task</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i class="ri-bar-chart-line e-mg-r-10"></i>Reports /
+                    Earnings</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i class="ri-table-2 e-mg-r-10"></i>Kanban board</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list e-header__list--title e-fw-bld e-tt-uppercase e-pd-x-20 e-pd-y-10">Components
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i class="ri-team-line e-mg-r-10"></i>Teams</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i class="ri-group-2-line e-mg-r-10"></i>Clients</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i class="ri-price-tag-2-line e-mg-r-10"></i>Pricing
+                    table</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i
+                      class="ri-shopping-cart-line e-mg-r-10"></i>Products</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list e-header__list--title e-fw-bld e-tt-uppercase e-pd-x-20 e-pd-y-10">System
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i
+                      class="ri-equalizer-line e-mg-r-10"></i>Settings</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list">
+                            <a href="" class="e-header__link e-pd-20 e-d-flex e-align-center e-justify-between">
+                                <span class="e-fs-14 e-d-flex e-align-center"><i
+                      class="ri-user-star-line e-mg-r-10"></i>Profile</span>
+                            </a>
+                        </li>
+
+                        <li class="e-header__list e-header__list--employee-of-month">
+                            <div class="e-card">
+                                <img src="images/employee-month.jpg" alt="Employee of the month">
+                                <div class="employee-details e-pd-20 e-ta-center">
+                                    <h4>Employee of the month</h4>
+                                    <h2>Casey W.</h2>
+                                    <span class="e-fs-12 e-tt-capitalize">Senior software engineer</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="e-header__list e-pd-x-20">
+                            <a href="#" class="e-btn e-d-flex e-pd-y-20">
+                                <span class="e-fs-16 e-d-flex e-align-center"><i class="ri-logout-box-r-line e-mg-r-10"></i>Log
+                    out</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- .e-header__navitems ends -->
+                        <!-----
+                        <div class="e-header__right e-d-flex e-align-center">
+                           
+                            <div class="site-alert e-mg-r-10">
+                                <button type="button" class="ease-modal-btn e-btn-icon" data-modal-target="subscription-reminder"></button>
+                            </div>
+
+                            <div class="theme-control e-mg-r-10">
+                                <button type="button" class="theme-switcher e-btn-icon" data-current-theme="light">
+                  <i class="ri-moon-line theme-dark"></i>
+                  <i class="ri-sun-line theme-light"></i>
+                </button>
+                            </div>
+
+                        <button type="button" class="e-avat e-avat-35" data-dropdown-target="profile">
+                  <img src="images/user-f-1.jpg" alt="" class="e-avat__img">
+                </button>
+
+                        <div class="e-dropdown__menu" id="profile">
+
+                            <div class="dropdown-header e-pd-20">
+
+                                <div class="e-d-flex e-align-center">
+
+                                    <div class="user-img e-mg-r-10">
+                                        <div class="e-avat e-avat-40">
+                                            <img src="images/Ek_onkar.png" alt="User" class="e-avat__img">
+                                        </div>
+                                    </div>
+
+                                    <div class="user-details">
+                                        <span class="e-fw-bld e-fs-14 e-d-block">Muskan Enterprises</span>
+                                        <span class="e-fs-12">Shop Owner</span>
+                                    </div>
+
+                                </div>
+
+                            </div> 
+                            ----->
+                        <!-- .dropdown-header ends -->
+
+            </div>
+            <!-- e-dropdown ends -->
+
+        </div>
+        <!-- .e-header__right ends -->
+
+        </nav>
+
+        </div>
+
+        </div>
+
+
+    </header>
+    <!-- .e-header ends -->
+
+    <main>
+
+        <div class="ease-dashboard">
+
+            <div class="e-container">
+
+                <div class="e-offset-12 e-offset-md-3 e-offset-lg-2">
+
+                    <div class="ease-section-heading e-pd-y-20">
+                        <h4 class="ease-title">Sat Sri Akaal</h4>
+                        <p class="ease-sub-title">Your dashboard and components are refreshed</p>
+                    </div>
+
+                    <section class="ease-overview e-pd-y-20">
+
+                        <div class="e-row">
+
+                            <div class="e-flex-sm-6 e-flex-lg-3 e-mg-b-20 e-mg-b-0-lg">
+
+                                <div class="e-card">
+
+                                    <div class="e-card__header">
+                                        <span class="e-card__title e-fw-bld">Cement</span>
+                                        <span class="e-btn-icon e-btn-icon-static"><i class="ri-bar-chart-line"></i></span>
+                                    </div>
+
+                                    <div class="e-card__body e-d-flex e-justify-between e-align-end">
+
+                                        <div class="left-side">
+                                            <h2 class="e-mg-b-10">500</h2>
+                                            <p class="e-fs-12 e-d-flex e-align-center">
+                                                <span class="ease-indicator-up e-mg-r-10 e-d-in-flex e-align-center"><i
+                              class="ri-arrow-up-line"></i> 1.5%</span>
+                                                <span class="ease-faded-text">From last Month</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="right-side">
+                                            <div class="e-bdg e-bdg-danger ease-bdg"><i class="ri-folders-line"></i></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="e-flex-sm-6 e-flex-lg-3 e-mg-b-20 e-mg-b-0-lg">
+
+                                <div class="e-card">
+
+                                    <div class="e-card__header">
+                                        <span class="e-card__title e-fw-bld"> STEEL</span>
+                                        <span class="e-btn-icon e-btn-icon-static"><i class="ri-bar-chart-line"></i></span>
+                                    </div>
+
+                                    <div class="e-card__body e-d-flex e-justify-between e-align-end">
+
+                                        <div class="left-side">
+                                            <h2 class="e-mg-b-10">11000</h2>
+                                            <p class="e-fs-12 e-d-flex e-align-center">
+                                                <span class="ease-indicator-up e-mg-r-10 e-d-in-flex e-align-center"><i
+                              class="ri-arrow-up-line"></i>
+                            1.7%</span>
+                                                <span class="ease-faded-text">From last Month in KG</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="right-side">
+                                            <div class="e-bdg e-bdg-secondary ease-bdg"><i class="ri-money-dollar-circle-line"></i></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="e-flex-sm-6 e-flex-lg-3 e-mg-b-20 e-mg-b-0-sm">
+
+                                <div class="e-card">
+
+                                    <div class="e-card__header">
+                                        <span class="e-card__title e-fw-bld">Bricks</span>
+                                        <span class="e-btn-icon e-btn-icon-static"><i class="ri-bar-chart-line"></i></span>
+                                    </div>
+
+                                    <div class="e-card__body e-d-flex e-justify-between e-align-end">
+
+                                        <div class="left-side">
+                                            <h2 class="e-mg-b-10">50000</h2>
+                                            <p class="e-fs-12 e-d-flex e-align-center">
+                                                <span class="ease-indicator-down e-mg-r-10 e-d-in-flex e-align-center"><i
+                              class="ri-arrow-down-line"></i>
+                            4%</span>
+                                                <span class="ease-faded-text">From last month</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="right-side">
+                                            <div class="e-bdg e-bdg-success ease-bdg"><i class="ri-line-chart-line"></i></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="e-flex-sm-6 e-flex-lg-3">
+
+                                <div class="e-card">
+
+                                    <div class="e-card__header">
+                                        <span class="e-card__title e-fw-bld">Aggregates</span>
+                                        <span class="e-btn-icon e-btn-icon-static"><i class="ri-bar-chart-line"></i></span>
+                                    </div>
+
+                                    <div class="e-card__body e-d-flex e-justify-between">
+
+                                        <div class="ease-box e-ta-center">
+                                            <h2 class="e-mg-b-10">1 Track</h2>
+                                            <p class="e-fs-12 ease-faded-text">Messages</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- .ease-overview ends -->
+
+                    <section class="ease-project-updates e-pd-y-20">
+
+                        <div class="e-row">
+
+                            <div class="e-flex-md-7 e-mg-b-20 e-mg-b-0-md">
+
+                                <div class="e-card">
+
+                                    <div class="e-card__header">
+                                        <span class="e-card__title e-fw-bld">Products updates</span>
+
+                                        <div class="e-d-flex e-align-center">
+                                            <button type="button" class="e-btn e-btn-sm e-btn-primary e-mg-r-10">
+                          <i class="ri-arrow-up-line e-mg-r-10"></i>
+                          Export
+                        </button>
+
+                                            <button type="button" class="e-btn e-btn-secondary e-btn-sq">
+                          <i class="ri-add-line"></i>
+                        </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="e-card__body e-pd-0">
+
+                                        <div class="e-overflow-auto">
+
+                                            <table class="e-tbl">
+
+                                                <thead class="e-tbl__header">
+                                                    <tr class="e-tbl__row">
+                                                        <th class="e-tbl__head">Product Name</th>
+                                                        <th class="e-tbl__head">Price</th>
+                                                        <th class="e-tbl__head">Stocks</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="e-tbl__body">
+
+                                                    <tr class="e-tbl__row">
+                                                        <td class="e-tbl__data">Steel</td>
+                                                        <td class="e-tbl__data">
+                                                            6000
+                                                        </td>
+
+                                                        <tr class="e-tbl__row">
+                                                            <td class="e-tbl__data">Solutions</td>
+                                                            <td class="e-tbl__data">
+                                                                600
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="e-tbl__row">
+                                                            <td class="e-tbl__data">Aggregates</td>
+                                                            <td class="e-tbl__data">
+                                                                1241
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="e-tbl__row">
+                                                            <td class="e-tbl__data">Cement</td>
+                                                            </td>
+                                                            <td class="e-tbl__data">
+                                                                1200 </td>
+                                                        </tr>
+
+                                                </tbody>
+
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- .ease-project-updates ends -->
+
+                    <section class="ease-project-overview e-pd-y-20">
+
+                        <div class="e-row">
+
+                            <div class="e-flex-lg-6 e-mg-b-20 e-mg-b-0-lg">
+
+                                <div class="e-card">
+
+                                    <div class="e-card__header">
+                                        <span class="e-card__title e-fw-bld">Material overview</span>
+
+                                        <div class="e-d-in-block e-dropdown e-dropdown-abs-right">
+                                            <button type="button" class="e-btn-icon" data-dropdown-target="project-overview">
+                          <i class="ri-more-2-line"></i>
+                        </button>
+
+                                            <div class="e-dropdown__menu" id="project-overview">
+
+                                                <ul class="dropdown-content">
+
+                                                    <li class="dropdown-list"><a href="#" class="dropdown-link e-d-block e-pd-10">Cement</a>
+                                                    </li>
+
+                                                    <li class="dropdown-list"><a href="#" class="dropdown-link e-d-block e-pd-10">Steel</a></li>
+
+                                                    <li class="dropdown-list"><a href="#" class="dropdown-link e-d-block e-pd-10">Bricks</a></li>
+
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="e-card__body e-pd-0">
+
+                                        <div class="e-tbl__header e-pd-20 e-ta-center e-overflow-hidden">
+
+                                            <div class="e-row">
+
+                                                <div class="e-flex-6 e-flex-sm-3 e-mg-b-8 e-mg-b-0-sm">
+                                                    <div class="e-h2">576</div>
+                                                    <span class="e-fs-12">Other</span>
+                                                </div>
+
+                                                <div class="e-flex-6 e-flex-sm-3 e-mg-b-8 e-mg-b-0-sm">
+                                                    <div class="e-h2">243</div>
+                                                    <span class="e-fs-12 e-bdg e-bdg-success">Cement</span>
+                                                </div>
+
+                                                <div class="e-flex-6 e-flex-sm-3">
+                                                    <div class="e-h2">102</div>
+                                                    <span class="e-fs-12 e-bdg e-bdg-secondary">Steel</span>
+                                                </div>
+
+                                                <div class="e-flex-6 e-flex-sm-3">
+                                                    <div class="e-h2">231</div>
+                                                    <span class="e-fs-12 e-bdg e-bdg-danger">Bricks</span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="ease-chart e-pd-20">
+                                            <canvas id="ease-project"></canvas>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="e-flex-lg-6">
+
+                                <div class="e-card">
+
+                                    <div class="e-card__header">
+                                        <span class="e-card__title e-fw-bld">Cement overview</span>
+                                    </div>
+
+                                    <div class="e-card__body e-d-flex e-fd-column e-align-center">
+
+                                        <div class="e-row e-mg-b-20">
+
+                                            <div class="e-flex-6 e-flex-sm-3 e-mg-b-8 e-mg-b-0-sm">
+                                                <div class="e-h2">450</div>
+                                                <span class="e-fs-12 e-bdg e-bdg-secondary e-tt-capitalize">ACC Gold</span>
+                                            </div>
+
+                                            <div class="e-flex-6 e-flex-sm-3 e-mg-b-8 e-mg-b-0-sm">
+                                                <div class="e-h2">400</div>
+                                                <span class="e-fs-12 e-bdg e-bdg-danger e-tt-capitalize">KJS</span>
+                                            </div>
+
+                                            <div class="e-flex-6 e-flex-sm-3">
+                                                <div class="e-h2">60</div>
+                                                <span class="e-fs-12 e-bdg e-bdg-success e-tt-capitalize">UltraTech</span>
+                                            </div>
+
+                                            <div class="e-flex-6 e-flex-sm-3">
+                                                <div class="e-h2">120</div>
+                                                <span class="e-fs-12 e-bdg e-bdg-warn e-tt-capitalize">Ambuja</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="ease-earning-chart e-d-flex e-justify-center e-align-center">
+                                            <canvas id="ease-earnings"></canvas>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!-- ChartJS script -->
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <!-- Main (custom) script-->
+                    <script src="dist/js/main.min.js"></script>
+                    ------------->
+</body>
+
+</html>
